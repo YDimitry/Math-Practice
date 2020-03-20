@@ -81,3 +81,122 @@ with open(file_name,'w', encoding="utf-8") as log:
 # print(sum(map(int,iter(input,'The End'))))
 
 # print(*map(curry(flip(pow))(2), range(0,int(input()),2)),sep='\n')
+
+# typ = input()
+# if typ == 'str':
+#     s = input()
+#     print(s and s or 'Empty String')
+# elif typ =='int':
+#     a = list(map(int,[input() for _ in range(2)]))
+#     print(sum(a) if any(a) else 'Empty Ints')
+# elif typ =='list':
+#     s = input()
+#     print(s and s.split()[-1] or 'Empty List')
+# else:
+#     print('Unknown type')
+
+
+# b = int(input())
+# print(b and round(int(input())/b,1) or 'Division by zero!')
+
+
+# input = "['mix', 'extra', '', 'x-files', 'xyz', 'xapple', 'apple']"
+# L = [s.replace("'",'') for s in input()[1:-1].split(', ')]
+
+
+# b1 = 'hello world'
+# b2 = b1[::2]
+# print(b2)
+# print('$'.join([input() for _ in range(2)]))
+# print(sum(map(int,input().split()))
+
+# s = input().split()
+# print(len(s),s.count('one'))
+# print('-$-'.join(input().split()[::-1]))
+# s = input().split()
+# print(s[1:2],s[-2])
+
+# print(*{input().split('&')})
+
+# print('#'.join([sum(map(int,input.split())) for _ in range(2)]))
+
+# Задача фон Неймана о мухе и поездах
+# L,v1,v2,vm = (int(input()), for _ in range(4))
+#
+# print(L/(v1+v2)*vm)
+
+
+# додекаэдр
+# v = 7.66*a^2
+# s = 1.422 *a
+# a = 2
+# s = pow(5,0.5)*pow((5+2*pow(5,0.5)),0.5)/4 * pow(a,2)
+# v = (15+7*pow(5,0.5))/4 * pow(a,3)
+# print(round(12*s,2), round(v,2))
+
+
+
+# площадь шестиугольника 2
+# равносторонний тр. (a^2*√3)/4
+# квадрат a^2
+# шестиугольник (3*√3 a^2)/ 2
+
+# a = int(input())
+# print(round(3*pow(a,2)*pow(3,0.5)/2 +3*pow(a,2)+6*pow(a/2,2)*pow(3,0.5)/4))
+
+# площадь шестиугольника
+# a = int(input())
+# s = lambda a: pow(a,2)*pow(3,0.5)/4
+# print(round(s(a*3)+2*s(a)))
+
+# площадь ромба
+
+# x = map(float,[input() for _ in range(2)])
+# s = mul(*x)/2
+# print(*[int(s),round(s,1),s],sep='\n')
+
+# площадь треугольника
+# x = [int(input()) for _ in range(3)]
+# perim = lambda a: sum(a)
+# p = lambda a: perim(a)/2
+# s = lambda a: pow(p(a)*(p(a)-a[0])*(p(a)-a[1])*(p(a)-a[2]),0.5)
+# print(perim(x), s(x),sep='\n')
+
+
+# x = [int(input()) for _ in range(2)]
+# op = [add, sub, flip(sub),truediv, flip(mod), pow]
+# print(*map(partial(flip(reduce)(a)), op),sep='\n')
+# print(*map(lambda f: f(*x),op),sep='\n')
+# print((op,repeat((7,9))))
+# print(partial(reduce)(add,(7,9)))
+# print(*reduce(partial(map,add),zip((1,2,3),(1,1,1)),(0,0)))
+
+# with open('file.txt','r') as data:
+#      writefile, textfile,n = [s.rstrip() for s in data]
+#
+# with open(writefile,'a') as outf, open(textfile,'r') as text:
+#     t = text.readlines()
+#     outf.write(t[int(n)].lower())
+
+# from scipy.constants import c, h, e, golden
+
+# def lam(U):
+#     return h*c/(e*U)
+
+# def counter(T):
+#     return len(sorted(sorted(T, key=lambda e:len(e)), key=lambda e: len(set(e.lower())))[-1])
+# def counter(T):
+#     return max(map(lambda s: (len(set(s.lower())), len(s)), T))
+# print(set('ABBA'))
+
+# print(reduce(lambda a,b: abs(sub(*b))==1 and L.index(b[0]) or 0, sliding_window(2, L),(0, 0)))
+# import numpy as np
+#
+# a = np.array([1,0,3])
+# b = np.array([0,2,1])
+#
+# c = 2*a-3*b
+#
+# M = np.array([a,b,c])
+# print(M)
+# print(np.linalg.matrix_rank(M))
