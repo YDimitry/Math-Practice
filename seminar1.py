@@ -1,3 +1,15 @@
+# шаг 14
+# s = input()
+# print(s[0]+s[1:].replace(s[0], '*'))
+
+# шаг 13
+# s = input()
+# print(len(s) > 1 and s[:2]+s[-2:] or '')
+
+# шаг 12
+# n = int(input())
+# print(f'Всего пончиков: {n<9 and n or "много"}')
+
 # шаг 11
 # def is_prime(n):
 #     return all(map(lambda x: n%x,range(2,int(pow(n,0.5))+1)))
