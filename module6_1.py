@@ -60,16 +60,17 @@ M1 = np.array((
 ))
 
 M2 = M1.copy()
-M2[-2] = np.sin(M1[-2] * np.pi/6)
-# print(M2)
-M2 = M2.T
-M2[-2] = np.exp(M2[-2])
-M2 = M2.T
-# print()
+M2[-2,:] = np.sin(M1[-2] * np.pi/6)
+print(M2)
+# M2 = M2.T
+M2[:,-2] = np.exp(M2[:,-2])
+# M2 = M2.T
+print()
+# print(M2[:,-2])
 # M2[-2][-2] = np.exp(np.sin(M2[-2][-2]*np.pi/6))
 # print(np.round(M2,2))
-# print(M2)
-
+print(M2)
+print(np.version.version)
 # print(np.exp())
 
 
