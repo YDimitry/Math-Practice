@@ -4,19 +4,19 @@ f = lambda x: (2*x**2 - 3*x - 5) / (3*x**2 + x + 1)
 
 def lim(f,x=10,step=10,pres=1e-4):
     while abs(f(x)-f(x*step))>pres:
-        print(f(x)-f(x*step))
+        # print(f(x)-f(x*step))
         x *= step
     return f(x)
 
-# print(round(lim(f,x=-10),3))
+# print(round(lim(f),3))
 # print(round(lim(f,x=-10),3))
 
 # 1.2 Предел функции
 from math import pi, sin, cos,atan, exp
 f = lambda x: sin(pi*x/2) / x
 
-# r = lim(f,x=1,step=10,pres=1e-20)
-# print(round(r,3))
+r = lim(f,x=1,step=10,pres=1e-20)
+print(round(r,3))
 
 # 2. Производная
 
@@ -85,7 +85,7 @@ a = """We are not what we should be
 We are not what we need to be
 But at least we are not what we used to be
   -- Football Coach"""
-print(mimic_dict(a))
+# print(mimic_dict(a))
 import random
 
 def print_mimic(mimic_dict, word):
@@ -96,7 +96,7 @@ def print_mimic(mimic_dict, word):
             word = random.choice(mimic_dict.get(word, mimic_dict[""]))
     return ' '.join(word_gen())
 
-print(print_mimic(mimic_dict(a),'we'))
+# print(print_mimic(mimic_dict(a),'we'))
 
 
 
