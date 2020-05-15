@@ -51,11 +51,11 @@ np.random.seed(42)
 
 # задача 19
 # n, m = map(int, input().split())
-n, m = 3, 5
-Z = np.zeros((n,m))
-Z[::2,1::2] = 1
-Z[1::2,::2] = 1
-print(Z)
+# n, m = 3, 5
+# Z = np.zeros((n,m))
+# Z[::2,1::2] = 1
+# Z[1::2,::2] = 1
+# print(Z)
 
 print()
 Z = np.tile([[0.,1.],[1.,0.]],(n, m))[:n,:m]
