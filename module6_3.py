@@ -64,18 +64,18 @@ import numpy as np
 # print(NonZerros)
 
 # задача 10.2
-# Z = np.array([[[1, 2],
-#            [4, 5]],
-#           [[7, 8],
-#            [0, 0]]])
-#
-# print(Z[Z>3])
+Z = np.array([[[1, 2],
+           [4, 5]],
+          [[7, 8],
+           [0, 0]]])
 
-n = np.nan
-m = np.nan
-print(id(n), id(m), sep='\n')
-print(id(n) == id(m))
-print(0* m)
+print(Z[Z>3].tolist())
+
+# n = np.nan
+# m = np.nan
+# print(id(n), id(m), sep='\n')
+# print(id(n) == id(m))
+# print(0* m)
 
 
 

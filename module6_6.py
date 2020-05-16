@@ -34,8 +34,8 @@ import numpy as np
 # print(Z)
 
 # задача 39.1 (деление отрезка на N+1 часть)
-# start, stop, n = [int(input()) for _ in range(3)]
-# Z = np.around(np.linspace(start+stop/(n+1), stop, n, False), 3)
+# start, stop, n = 10,111,9 #[int(input()) for _ in range(3)]
+# Z = np.around(np.linspace(start+(stop-start)/(n+1), stop, n, False), 3)
 # print(Z)
 
 # задача 39.2
@@ -44,15 +44,15 @@ import numpy as np
 # print(Z)
 
 # задача 40
-seed, n = [int(input()) for _ in range(2)]
-np.random.seed(seed)
-
-Z = np.sort(np.random.random(n))
-print(Z)
-Z = np.sort(np.random.default_rng().uniform(size=n))
-print(Z)
-Z = np.random.uniform(size=n)
-print(Z)
+# seed, n = [int(input()) for _ in range(2)]
+# np.random.seed(seed)
+#
+# Z = np.sort(np.random.random(n))
+# print(Z)
+# Z = np.sort(np.random.default_rng().uniform(size=n))
+# print(Z)
+# Z = np.random.uniform(size=n)
+# print(Z)
 
 
 
